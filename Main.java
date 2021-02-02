@@ -12,11 +12,13 @@ class Main {
   static String videoGameName(String name) {
     String vgname = "your video games name is : " + name;
     return vgname;
+    //This should print the video game name
 
   }
 
   static int vgPrice(int A, int B) {
     int videoGamePrice = A - B;
     return videoGamePrice;
+    // this prints the video game price
   }
 }
