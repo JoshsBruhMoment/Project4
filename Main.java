@@ -7,6 +7,6 @@ class Main {
 
 static int vgPrice(int A, int B){
   int videoGamePrice =  A - B;
-  return videoGamePrice; 
+  return videoGamePrice;  
 }
 }
