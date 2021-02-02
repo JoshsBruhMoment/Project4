@@ -1,12 +1,22 @@
+import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
-    System.out.println("The Video Game Price is: ");
-    System.out.println(vgPrice(60, 40) + " dollars");
+    Scanner scan = new Scanner(System.in);
+    System.out.println("what is your video games name?");
+    String name = scan.next();
+    System.out.println(videoGameName(name));
+    System.out.println("The Video Game Price is: " + vgPrice(60, 40) + " dollars");
   }
 
+  static String videoGameName(String name) {
+    String vgname = "your video games name is : " + name;
+    return vgname;
 
-static int vgPrice(int A, int B){
-  int videoGamePrice =  A - B;
-  return videoGamePrice;  
-}
+  }
+
+  static int vgPrice(int A, int B) {
+    int videoGamePrice = A - B;
+    return videoGamePrice;
+  }
 }
